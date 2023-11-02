@@ -1,0 +1,16 @@
+{:paths   ["src"]
+ :deps    {thheller/shadow-cljs                            {:mvn/version "2.25.10"}
+           reagent/reagent                                 {:mvn/version "1.2.0"}
+           org.clojure/clojure                             {:mvn/version "1.11.1"}
+           org.clojure/clojurescript                       {:mvn/version "1.11.121"}
+           com.google.javascript/closure-compiler-unshaded {:mvn/version "v20230411"}
+           io.pedestal/pedestal.jetty                      {:mvn/version "0.6.1"}
+           io.pedestal/pedestal.service                    {:mvn/version "0.6.1"}
+           hiccup/hiccup                                   {:mvn/version "2.0.0-alpha2"}}
+ :aliases {:dev      {:extra-paths ["dev"]
+                      :extra-deps  {nrepl/nrepl                                   {:mvn/version "1.1.0"}
+                                    com.kohlschutter.junixsocket/junixsocket-core {:mvn/version "2.8.2"
+                                                                                   :extension "pom"}
+                                    djblue/portal                                 {:mvn/version "0.49.0"}}}
+           :outdated {:replace-deps {olical/depot {:mvn/version "2.3.0"}}
+                      :main-opts    ["-m" "depot.outdated.main" "--every"]}}}

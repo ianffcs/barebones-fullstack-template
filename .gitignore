@@ -1,0 +1,23 @@
+### Clojure ###
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
+target/
+.idea/
+*.iml
+node-modules/
+
+.shadow-cljs/
+.DS_Store
+node_modules/

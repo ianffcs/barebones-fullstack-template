@@ -1,0 +1,5 @@
+{:deps true
+ :builds {:app {:target     :browser
+                :output-dir "target/classes/public/app"
+                :asset-path "/app"
+                :modules    {:main {:init-fn app.client/-main}}}}}
