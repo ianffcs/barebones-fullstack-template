@@ -1,4 +1,5 @@
 (ns app.server
+  (:gen-class)
   (:require [hiccup2.core :as h]
             [io.pedestal.http :as http]
             [io.pedestal.http.route :as route]

@@ -5,7 +5,8 @@
             [nrepl.transport :as transport]
             [portal.api :as p]))
 
-(defonce p (p/open))
+(defonce p
+  (p/open))
 
 (defonce repl-server
   (atom nil))
